@@ -29,11 +29,12 @@ public class AramaEntegrasyonu {
 		kanallar.add(new Istatistik());
 		kanallar.add(new Tamamla());
 		kanallar.add(new OlmadikSeyler());
+		//yukarıdaki eyleme register etmek deniliyor.
 		
 		for(EntegrasyonInterface ei: kanallar) {
 			ei.process();
 		}
-		
+		//observer design pattern
 		
 	}
 	
